@@ -1,0 +1,17 @@
+
+<!-- Load TensorFlow.js. This is required to use MobileNet. -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.1"> </script>
+<!-- Load the MobileNet model. -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"> </script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.0.2/dist/tfjs-vis.umd.min.js"></script>
+<!-- Replace this with your image. Make sure CORS settings allow reading the image! -->
+<img id="img" src="bird.jpg"></img>
+<!-- Place your code in the script tag below. You can also use an external .js file -->
+<script src = "file_load.js" type ="module" ></script>
+<script src = "modeling.js" type ="module"></script>
+<body>
+  <input type="file" onchange="previewFile()">
+
+  <input type="file" id="input" multiple>
+  
+</body>
